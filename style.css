@@ -1,23 +1,64 @@
 @font-face {
     font-family: 'noel1';
-    src: URL('font/Le\ Slip\ du\ Père\ Noël.ttf') format('truetype');
+    src: URL('font/MerryChristmasStar.ttf') format('truetype');
+  }
+@font-face {
+font-family: 'noel2';
+src: URL('font/MerryChristmasFlake.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'noel3';
+    src: URL('font/ChristmasWish-monoline.otf') format('opentype');
   }
 
 
 body{
     margin: 0;
+}
+
+.bodyDroite{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 230px;
+}
+
+.bodyCenter{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bodyFond{
+    background-image: url("pictures/fond3.jpg");
+    background-position: left;
 }
 .bodyRouge{
     background-color: #ce0101;
 }
 
+#conteneur{
+    height: 80%;
+}
 
 h1{
     text-align: center;
     font-family:"noel1" ;
+}
+
+h2{
+    font-family:"noel2" ;
+    font-size: xx-large;
+    color: rgb(229, 245, 243);
+    letter-spacing: 3px;
+    margin: 0;
+    margin-top: 10px;
+}
+h3{
+    margin: 0;
+    font-family:"noel3" ;
+    font-size: 30px;
+    color: rgb(232, 229, 206);
 }
 
 #h1ButtonP{
@@ -27,8 +68,8 @@ h1{
 a{
     text-decoration: none;
     border: solid 1px red;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 30%;
     margin: 0;
     display: flex;
     justify-content: center;
