@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'noel1';
+    src: URL('font/Le\ Slip\ du\ Père\ Noël.ttf') format('truetype');
+  }
+
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bodyRouge{
+    background-color: #ce0101;
+}
+
+
+h1{
+    text-align: center;
+    font-family:"noel1" ;
+}
+
+#h1ButtonP{
+    color: #ce0101;
+}
+
+a{
+    text-decoration: none;
+    border: solid 1px red;
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #fce5e5;
+
+}
+
+a::after{
+    color: aliceblue;
+}
