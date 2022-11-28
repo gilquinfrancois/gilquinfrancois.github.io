@@ -15,13 +15,12 @@ src: URL('font/MerryChristmasFlake.ttf') format('truetype');
 body{
     margin: 0;
 }
-
 .bodyDroite{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 200px;
+    margin-left: 120px;
     height: 100%;
 }
 
@@ -55,6 +54,7 @@ h2{
     letter-spacing: 3px;
     margin: 0;
     margin-top: 10px;
+    display: flex;
 }
 h3{
     margin: 0;
@@ -123,4 +123,31 @@ a::after{
 h4{
     font-size: 3rem;
     margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.gp{
+    height: 50px;
+    width: 50px;
+    animation: rotation 2.5s infinite linear;
+}
+
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(60deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }

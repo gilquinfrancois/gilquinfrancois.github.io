@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     $(".buttonPlusEF").click(function(){
         $(".detail").css("display","block");
         $(".detail").animate({height:'60%'},"slow");
