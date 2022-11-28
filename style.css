@@ -153,7 +153,25 @@ h4{
     align-items: center;
     z-index: 1;
 }
+.lt1{
+    height: 80px;
+    width: 80px;
+    animation: rotation2 2.5s infinite linear;
+}
+.lt2{
+    height: 50px;
+    width: 50px;
+    animation: rotation2 2.5s infinite linear;
+}
+.lt3{
+    height: 50px;
+    width: 50px;
+    animation: rotation 2.5s infinite linear;
+}
 
+#contLutin{
+
+}
 
 @keyframes rotation {
     0%{
@@ -170,6 +188,43 @@ h4{
     }
     100%{
         transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes rotation2 {
+    0%{
+        transform: rotate(-60deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(60deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+    
+}
+@keyframes rotation3 {
+    0%{
+        transform: rotate(-30deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-30deg);
     }
     
 }
