@@ -34,7 +34,9 @@ body{
     background-position: left;
 }
 .bodyRouge{
-    background-color: #ce0101;
+    background-image: url("pictures/fond5.jpg");
+    background-position: right;
+    background-size: cover;
 }
 
 #conteneur{
@@ -44,7 +46,11 @@ body{
 
 h1{
     text-align: center;
-    font-family:"noel1" ;
+    color: #ffffff;
+    font-family: "noel2";
+    font-size: 4rem;
+    letter-spacing: 5px;
+    filter: brightness(1.75);
 }
 
 h2{
@@ -67,7 +73,7 @@ h3{
     color: #ce0101;
 }
 
-a{
+/* a{
     text-decoration: none;
     border: solid 1px red;
     width: 50%;
@@ -79,11 +85,7 @@ a{
     border-radius: 30px;
     background-color: #fce5e5;
 
-}
-
-a::after{
-    color: aliceblue;
-}
+} */
 
 
 .detail{
@@ -131,6 +133,26 @@ h4{
     width: 50px;
     animation: rotation 2.5s infinite linear;
 }
+.gp2{
+    height: 50px;
+    width: 50px;
+    animation: trans 10s infinite linear;
+}
+.gpMenu{
+    height: 250px;
+    width: 250px;
+    animation: rotation 2.5s infinite linear;
+    z-index: 1;
+}
+#contA{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
 
 
 @keyframes rotation {
@@ -149,5 +171,24 @@ h4{
     100%{
         transform: rotate(0deg);
     }
+    
+}
+
+@keyframes trans {
+    /* 0%{
+        transform: translateY(-1000px);
+    } */
+    /* 20%{
+        transform: translateY(20px);
+    }
+    40%{
+        transform: translateX(-20px);
+    }
+    80%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateX(20px);
+    } */
     
 }
