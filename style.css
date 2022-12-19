@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 135px;
     height: 100%;
 }
 
@@ -40,8 +40,10 @@ body{
 }
 
 #conteneur{
-    height: 80%;
-    display: contents;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1{
@@ -59,7 +61,7 @@ h2{
     color: rgb(229, 245, 243);
     letter-spacing: 3px;
     margin: 0;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     display: flex;
 }
 h3{
@@ -67,6 +69,14 @@ h3{
     font-family:"noel3" ;
     font-size: 30px;
     color: rgb(232, 229, 206);
+    margin-left: 5px;
+}
+
+h5{
+    margin-bottom: 32px;
+    font-family: cursive;
+    font-size: small;
+    margin-left: 20px;
 }
 
 #h1ButtonP{
@@ -171,6 +181,10 @@ h4{
 
 #contLutin{
 
+}
+
+.divFlex{
+    display: flex;
 }
 
 @keyframes rotation {
