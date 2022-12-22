@@ -74,5 +74,20 @@
             
         </div>
     </div>
+    <audio controls id="autoplay" autoplay="true" loop hidden >
+        <source src="audio/noel.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        $(document).ready(function(){
+            $('.buttonPlus').click(function(){
+                var aud = document.getElementById('autoplay');
+                aud.volume=0.2;
+                $('#autoplay').get(0).play();
+            })
+            $('#croix').click(function(){
+                $('#autoplay').get(0).pause();
+            })
+        });
+    </script>
 </body>
 </html>
