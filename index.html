@@ -20,9 +20,34 @@
                     <img class="lt1" src="pictures/frlutin.png" alt="frnaçois lutin">
                     <img class="lt1" src="pictures/thlutin.png" alt="theo lutin">
                     <img class="lt1" src="pictures/pilutin.png" alt="pierre lutin">
+                    <audio controls id="autoplay" autoplay="true" loop hidden >
+                        <source src="audio/Mariah Carey - All I Want for Christmas Is You (Make My Wish Come True Edition).mp3#t=00:00:03" type="audio/mp3">
+                    </audio>
                 </div>
             </a>
         </div>
     </div>
+    <div style="width: 100%; display: block; position: fixed; text-align: -webkit-center;bottom: 0;z-index: 1;">
+        <div style="width: 50px;height: 50px;position: relative; margin-top: 15px;">
+            <a id="play"><img src="pictures/play.png" alt="play" style="width: 100%;"></a>
+            <a id="stop" style="display: none;" ><img src="pictures/pause.png" alt="stop" style="width: 100%;"></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#play').click(function(){
+                var aud = document.getElementById('autoplay');
+                aud.volume=0.2;
+                $('#autoplay').get(0).play();
+                $('#play').hide();
+                $('#stop').show();
+            })
+            $('#stop').click(function(){
+                $('#autoplay').get(0).pause();
+                $('#play').show();
+                $('#stop').hide();
+            })
+        });
+    </script>
 </body>
 </html>
