@@ -77,15 +77,60 @@
     <audio controls id="autoplay" loop hidden >
         <source src="audio/noel.mp3" type="audio/mp3">
     </audio>
+    <audio controls id="autoplay2" loop hidden >
+        <source src="audio/soupe.mp3" type="audio/mp3">
+    </audio>
+    <audio controls id="autoplay3" loop hidden >
+        <source src="audio/EFroide.mp3#t=00:00:49" type="audio/mp3">
+    </audio>
+    <audio controls id="autoplay4" loop hidden >
+        <source src="audio/EChaude.mp3" type="audio/mp3">
+    </audio>
+    <audio controls id="autoplay5" loop hidden >
+        <source src="audio/Plat.mp3#t=00:00:04" type="audio/mp3">
+    </audio>
+    <audio controls id="autoplay6" loop hidden >
+        <source src="audio/dessert.mp3#t=00:00:27" type="audio/mp3">
+    </audio>
     <script>
         $(document).ready(function(){
-            $('.buttonPlus').click(function(){
+            $('.buttonPlusAp').click(function(){
                 var aud = document.getElementById('autoplay');
                 aud.volume=0.2;
                 $('#autoplay').get(0).play();
             })
+            $('.buttonPlusEF').click(function(){
+                var aud = document.getElementById('autoplay3');
+                aud.volume=0.2;
+                $('#autoplay3').get(0).play();
+            })
+            $('.buttonPlusEC').click(function(){
+                var aud = document.getElementById('autoplay4');
+                aud.volume=0.3;
+                $('#autoplay4').get(0).play();
+            })
+            $('.buttonPlusS').click(function(){
+                var aud = document.getElementById('autoplay2');
+                aud.volume=0.1;
+                $('#autoplay2').get(0).play();
+            })
+            $('.buttonPlusP').click(function(){
+                var aud = document.getElementById('autoplay5');
+                aud.volume=0.2;
+                $('#autoplay5').get(0).play();
+            })
+            $('.buttonPlusD').click(function(){
+                var aud = document.getElementById('autoplay6');
+                aud.volume=0.2;
+                $('#autoplay6').get(0).play();
+            })
             $('#croix').click(function(){
                 $('#autoplay').get(0).pause();
+                $('#autoplay2').get(0).pause();
+                $('#autoplay3').get(0).pause();
+                $('#autoplay4').get(0).pause();
+                $('#autoplay5').get(0).pause();
+                $('#autoplay6').get(0).pause();
             })
         });
     </script>
