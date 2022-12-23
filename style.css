@@ -56,7 +56,7 @@ h1{
 }
 
 h2{
-    font-family:"noel2" ;
+    font-family:"noel3" ;
     font-size: xx-large;
     color: rgb(229, 245, 243);
     letter-spacing: 3px;
@@ -66,16 +66,16 @@ h2{
 }
 h3{
     margin: 0;
-    font-family:"noel3" ;
-    font-size: 30px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
     color: rgb(232, 229, 206);
     margin-left: 5px;
 }
 
 h5{
     margin-bottom: 32px;
-    font-family: cursive;
-    font-size: small;
+    font-family: fangsong;
+    font-size: medium;
     margin-left: 20px;
 }
 
