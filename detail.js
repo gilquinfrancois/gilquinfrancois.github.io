@@ -30,7 +30,7 @@ $(document).ready(function(){
         $(".detail").animate({height:'60%'},"slow");
         $(".buttonPlus").css("z-index",0);
         $('#titreDetail').text("Soupe");
-        $('#textDetail').html("<h5>Soupe de potiron.</h5>");
+        $('#textDetail').html("<h5>Velouté de potiron.</h5>");
     });
 
     $(".buttonPlusP").click(function(){
