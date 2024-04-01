@@ -127,7 +127,7 @@
       if ($(window).width() < 768) {
         var heightFooter = $('footer').height();
           var heightDoc = $(document).height();
-          $('.left').css('height',heightDoc-heightFooter+28);
+          $('.left').css('height',heightDoc-heightFooter);
       }
       if($('.left').is(':visible')){
           $('#imgMobileButton').attr('src','img/menuClose.svg');
