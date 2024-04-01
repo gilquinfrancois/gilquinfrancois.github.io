@@ -124,6 +124,11 @@
     </div>
   <script>
     $(document).ready(function () {
+      if ($(window).width() < 768) {
+        var heightFooter = $('footer').height();
+          var heightDoc = $(document).height();
+          $('.left').css('height',heightDoc-heightFooter+28);
+      }
       if($('.left').is(':visible')){
           $('#imgMobileButton').attr('src','img/menuClose.svg');
         }else{
@@ -149,8 +154,9 @@
           $('.left').css('height',$(document).height());
         } else {
           $('.left').hide();
-          
-          $('.left').css('height',$(document).height()-$('footer').height());
+          var heightFooter = $('footer').height();
+          var heightDoc = $(document).height();
+          $('.left').css('height',heightDoc-heightFooter);
         }
       });
     });
