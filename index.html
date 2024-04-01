@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV François Gilquin</title>
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="leftHeader"></div>
+    <div class="left">
+      <div class="fullHeight">
+        <img
+          class="imgHeader"
+          src="img/FRANCOIS_GILQUIN.jpg"
+          alt="Photo de François Gilquin."
+        >
+        <div class="contact">
+          <h2>CONTACT</h2>
+          <hr>
+          <h6><i class="fa fa-birthday-cake"></i> 22/04/1998</h6>
+          <h6><i class="fa fa-phone"></i> (+32) 0494.44.51.83</h6>
+          <h6>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:francoisgilquin@yahoo.fr"
+              >francoisgilquin@yahoo.fr</a
+            >
+          </h6>
+          <h6>
+            <i class="fa fa-map-marker"></i> 171 rue Hamoir <br>La Louvière
+            7100
+          </h6>
+          <br>
+        </div>
+        <div class="skills">
+          <h2>SKILLS</h2>
+          <hr>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>React native</li>
+            <li>Node.js</li>
+            <li>PHP</li>
+          </ul>
+          <br>
+        </div>
+        <div class="softSkills">
+          <h2>SOFT SKILLS</h2>
+          <hr>
+          <ul>
+            <li>Autonomie</li>
+            <li>Créativité</li>
+            <li>Travail d'équipe</li>
+            <li>À l'écoute</li>
+            <li>Gestion du temps</li>
+            <li>Adaptabilité technologique</li>
+          </ul>
+          <br>
+        </div>
+        <div class="aideEmploi">
+          <h2>AIDES À L'EMPLOI</h2>
+          <hr>
+          <ul>
+            <li>APE 2022</li>
+            <li>PFI</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+    </div>
+    <button id="MobileOpen"><img id="imgMobileButton" src="img/menuOpen.svg" alt="image du boutton du menu"></button>
+    <div class="right">
+      <header class="header">
+        <h3>DEVELOPPEUR WEB</h3>
+        <h1>FRANÇOIS GILQUIN</h1>
+        <hr>
+      </header>
+      <div class="projetReal">
+        <h2>PROJETS RÉALISÉS</h2>
+        <hr>
+        <h3>TFE</h3>
+        <h3>2023</h3>
+        <ul>
+          <li>
+            Développement d'un site et de son application mobile pour la gestion de notes de frais
+          </li>
+        </ul>
+        <br>
+        <h3>STAGE</h3>
+        <h4>Multios</h4>
+        <h3>Février 2023 - Mai 2023</h3>
+        <ul>
+          <li>
+            Développement d'une application de gestion de rapport et de la sécurité de travailleur en Angular et ASP.NET Core
+          </li>
+        </ul>
+        <br>
+      </div>
+      <div class="formation">
+        <h2>FORMATION</h2>
+        <hr>
+        <h3>2018-2023</h3>
+        <h3>HAUTE ÉCOLE EN HAINAUT</h3>
+            <p>Bachelier en informatique & systèmes orientation réseaux &
+                télécomunication. Avec option développement</p>
+        <br>
+        <h3>2010-2018</h3>
+        <h3>ATHÉNÉE ROYAL JULES BORDET SOIGNIES</h3>
+            <p>Certificat d’enseignement secondaire supérieur</p>
+        <br>
+      </div>
+      <footer>
+        <a href='https://www.linkedin.com/in/françois-gilquin-6467a1212' target="_blank">
+            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href='cv/CV_FRANCOIS_GILQUIN.pdf' target="_blank">
+          <i class="fa fa-print fa-3x" aria-hidden="true"></i>
+        </a>
+      </footer>
+    </div>
+  <script>
+    $(document).ready(function () {
+      if($('.left').is(':visible')){
+          $('#imgMobileButton').attr('src','img/menuClose.svg');
+        }else{
+          $('#imgMobileButton').attr('src','img/menuOpen.svg');
+        }
+      $('#MobileOpen').click(function () {
+        $('.left').toggle();
+        if($('.left').is(':visible')){
+          $('#imgMobileButton').attr('src','img/menuClose.svg');
+        }else{
+          $('#imgMobileButton').attr('src','img/menuOpen.svg');
+        }
+      });
+
+      $(window).resize(function () {
+        if($('.left').is(':visible')){
+          $('#imgMobileButton').attr('src','img/menuClose.svg');
+        }else{
+          $('#imgMobileButton').attr('src','img/menuOpen.svg');
+        }
+        if ($(window).width() > 768) {
+          $('.left').show();
+          $('.left').css('height',$(document).height());
+        } else {
+          $('.left').hide();
+          
+          $('.left').css('height',$(document).height()-$('footer').height());
+        }
+      });
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('font/Lato-Light.ttf');
+}
+
+.header{
+    background-color: #f4f4f4;
+    height: 300px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+body{
+    color: #244c5d;
+    margin: 0;
+    display: flex;
+}
+
+.imgHeader{
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #a7c9d8;
+    margin: 60px 30px;
+}
+
+.fullHeight{
+    min-height: 100vh;
+    height: 100%;
+    background-color: #d9e6ec;
+    width: max-content;
+    margin-top: 0px;
+    top: 0;
+}
+.leftHeader{
+    width: 30px;
+    background-color: #f4f4f4;
+    height: 300px;
+    margin-top: 30px;
+}
+.left{
+    width: auto;
+
+}
+.right{
+    width: -webkit-fill-available;
+
+}
+
+h1,h3,hr{
+    margin-left: 40px;
+}
+
+h1{
+    font-family: "Montserrat";
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+h2{
+    font-family: "Montserrat";
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size:medium;
+}
+
+h3{
+    font-family: "Raleway";
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+
+h6{
+    font-family: "Lato";
+    letter-spacing: 2px;
+    font-size:small;
+    margin: 10px 0;
+}
+
+li{
+    font-family: "Lato";
+    letter-spacing: 2px;
+    font-size:small;
+}
+
+.contact h6{
+    margin-left: 20px;
+}
+
+hr{
+    width: 40px;
+}
+
+.fullHeight hr{
+    margin-left: 20px;
+}
+
+.projetReal h3,.formation h3{
+    font-size:15px;
+    font-family: "RalewayBold";
+    letter-spacing: 0.5px;
+    
+}
+
+.projetReal h4,.formation h4{
+    font-size:small;
+    font-family: "Raleway";
+    margin-left: 40px;
+}
+
+.projetReal p,.formation p{
+    font-family: "Raleway";
+    margin-left: 40px;
+}
+
+.projetReal h2,.formation h2{
+    margin-left: 40px;
+}
+
+.projetReal li,.formation li{
+    margin-left: 20px;
+}
+
+footer{
+    background-color: #244c5d;
+    height: 100px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+footer a{
+    margin-left: 10px;
+    color: #f4f4f4;
+}
+
+#MobileOpen{
+    display: none;
+    height: 30px;
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    border: none;
+    background-color: #244c5d;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px){
+    .left{
+        position: absolute;
+    }
+    footer{
+        width: 100vw;
+    }
+    #MobileOpen{
+        display: block;
+    }
+}
+
+
